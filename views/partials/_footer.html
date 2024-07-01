@@ -1,0 +1,70 @@
+<footer>
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1900 200">
+        <path d="M1907.2,196.8C1335.1-24.1,760.9-72.6-2.4,193.9L-2.5-4.7L1905-1.9L1907.2,196.8z" id="path_footer"/>
+    </svg>
+    <main class="container">
+        <div class="footer-item">
+            <img src="https://casage.com.br/assets/images/logo.png" alt="" width="100%" height="auto">
+            <p>A Casa GE (Garra e Esperança) é um centro de acolhimento e apoio social e psicológico a pacientes oncológicos localizada na Vila Santos, em Caçapava.</p>
+        </div>
+        <div class="footer-item">
+            <h2>Endereço</h2>
+            <h3>Rua Rufino Esteves da Costa Salgado, 64</h3>
+            <p>Vila Santos – Caçapava/SP</p>
+            <p>CEP 12280-013</p>
+        </div>
+        <div class="footer-item">
+            <h2>Contato</h2>
+            <p><i class="fa-solid fa-phone"></i> (12) 3655-6466</p>
+            <hr>
+            <p><i class="fa-solid fa-envelope"></i> casa-ge@hotmail.com</p>
+            <hr>
+            <div>
+                <p><i class="fa-brands fa-facebook-f"></i> <a href="https://www.facebook.com/casage.ge" target="_blank">Facebook</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i></i> <a href="http://wa.me/551236556466" target="_blank">Whatsapp</a></p>
+            </div>
+        </div>
+    </main>
+    <div class="creditos">
+        <p>2021 © Casa GE. Todos direitos reservados.</p>
+        <p>Feito por <b>ClickInsight</b>.</p>
+    </div>
+</footer>
+
+<script>
+    var protocol = window.location.protocol;
+    var hostname = window.location.hostname;
+    var url = protocol + "//" + hostname;
+    var url_home = url + "/casaGE"
+    var url_noticias = url + "/casaGE/views/noticias_geral.php"
+    var url_diretoria = url + "/casaGE/views/diretoria.php"
+    var url_estrutura = url + "/casaGE/views/estrutura.php"
+    var url_doacao = url + "/casaGE/views/doacao.php"
+    var url_contato = url + "/casaGE/views/contato.php"
+
+    var homes = document.querySelectorAll('.home_link');
+    var noticias = document.querySelectorAll('.noticia_link');
+    var diretoria = document.querySelectorAll('.diretoria_link')
+    var estrutura = document.querySelectorAll('.estrutura_link')
+    var doacao = document.querySelectorAll('.doacao_link')
+    var contato = document.querySelectorAll('.contato_link')
+
+    homes.forEach(function(link){
+        link.href = url_home;
+    });
+    noticias.forEach(function(link){
+        link.href = url_noticias;
+    });
+    diretoria.forEach(function(link){
+        link.href = url_diretoria;
+    });
+    estrutura.forEach(function(link){
+        link.href = url_estrutura;
+    });
+    doacao.forEach(function(link){
+        link.href = url_doacao;
+    });
+    contato.forEach(function(link){
+        link.href = url_contato;
+    });
+</script>
